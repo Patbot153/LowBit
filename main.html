@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!-- 声明文档类型为HTML5 -->
+<html lang="zh-CN">
+<!-- lang属性指定页面语言为简体中文 -->
+
+<head>
+    <!-- 头部：包含页面元信息、样式、脚本引用等 -->
+    <meta charset="UTF-8">
+    <!-- 设置字符编码为UTF-8，避免中文乱码 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 适配移动端：视口宽度等于设备宽度，初始缩放比例1.0 -->
+    <meta name="description" content="这里填写网页的描述信息">
+    <!-- 网页描述，用于SEO -->
+    <meta name="keywords" content="关键词1,关键词2,关键词3">
+    <!-- 网页关键词，用于SEO -->
+    <meta name="author" content="你的名字/团队">
+    <!-- 网页作者 -->
+    <title>你的网页标题</title>
+    <!-- 网页标题，显示在浏览器标签栏 -->
+
+    <!-- 内部CSS样式（也可以通过link引入外部CSS文件） -->
+    <style>
+        /* 全局样式重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Microsoft YaHei", Arial, sans-serif;
+            /* 字体：微软雅黑/无衬线字体 */
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        /* 头部样式 */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        /* 导航栏样式 */
+        nav {
+            background-color: #34495e;
+            padding: 0.8rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #3498db;
+            /* 鼠标悬浮时变色 */
+        }
+
+        /* 主体内容容器 */
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            display: flex;
+            gap: 2rem;
+            padding: 0 1rem;
+        }
+
+        /* 主要内容区 */
+        main {
+            flex: 3;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 侧边栏 */
+        aside {
+            flex: 1;
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 页脚样式 */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        /* 响应式适配：屏幕宽度小于768px时，容器改为垂直排列 */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 页面头部：通常放logo、标题等 -->
+    <header>
+        <h1>网页主标题</h1>
+        <p>网页副标题/标语</p>
+    </header>
+
+    <!-- 导航栏：页面导航链接 -->
+    <nav>
+        <ul>
+            <li><a href="#home">首页</a></li>
+            <li><a href="#about">关于我们</a></li>
+            <li><a href="#service">服务</a></li>
+            <li><a href="#contact">联系我们</a></li>
+        </ul>
+    </nav>
+
+    <!-- 主体内容容器 -->
+    <div class="container">
+        <!-- 主要内容区 -->
+        <main>
+            <h2>主要内容标题</h2>
+            <p>这里是网页的核心内容区域，可以添加文本、图片、视频等内容。</p>
+            <p>示例段落：HTML5 提供了丰富的语义化标签，让网页结构更清晰，同时也有利于搜索引擎优化（SEO）。</p>
+        </main>
+
+        <!-- 侧边栏：放辅助信息，如推荐内容、联系方式、广告等 -->
+        <aside>
+            <h3>侧边栏标题</h3>
+            <ul>
+                <li>辅助链接1</li>
+                <li>辅助链接2</li>
+                <li>辅助链接3</li>
+            </ul>
+        </aside>
+    </div>
+
+    <!-- 页脚：放版权信息、备案号、联系方式等 -->
+    <footer>
+        <p>&copy; 2026 你的网站名称 - 保留所有权利</p>
+        <p>备案号：粤ICP备XXXXXXX号</p>
+    </footer>
+
+    <!-- 可选：引入外部JavaScript文件（也可以写内部JS） -->
+    <script>
+        // 这里可以添加JavaScript代码，如交互逻辑、数据请求等
+        console.log("网页框架加载完成！");
+    </script>
+</body>
+
+</html>
