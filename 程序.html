@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">	<!--声明为utf8格式-->
+		<link rel="shortcut icon" href="https://cdn.luogu.com.cn/upload/image_hosting/h37nin65.png">	<!--在标题中插入图片-->
+		<title>MyHTML</title>	<!--标题-->
+	</head>
+	
+	<body>
+		<!--单行注释-->
+		<!--
+			多行注释1
+			多行注释2
+			多行注释3
+		-->
+		<h1>标题1</h1>	<!--浏览器会自动地在标题的前后添加空行-->
+		<h2>标题2</h2>
+		<h3>标题3</h3>
+		<h4>标题4</h4>
+		<h5>标题5</h5>
+		<h6>标题6</h6>
+		<br>
+		表格：<br>
+		<table border=5>
+			<tbody align="center" valign="center">
+				<tr height=50>
+					<td width=50 rowspan=2 colspan=1>2,1</td>
+					<td width=100 rowspan=1 colspan=2>1,2</td>
+				</tr>
+				<tr height=50>
+					<td width=50 rowspan=1 colspan=1>1,1</td>
+					<td width=50 rowspan=1 colspan=1>1,1</td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+		分割线：<hr>
+		<br>
+		正文	<br>
+		<br>
+		<b>加粗文本</b>	<br>
+		<br>
+		<big>大号文本</big>	<br>
+		<br>
+		<small>小号文本</small>	<br>
+		<br>
+		<i>斜体文本</i>	<br>
+		<br>
+		<ins>下划线文本</ins>	<br>
+		<br>
+		<span style="text-decoration:overline">上划线文本</span>
+		<br>
+		<sub>下标文本</sub>
+		<br>
+		<sup>上标文本</sup>
+		<br>
+		<del>删除线文本</del>	<br>
+		<br>
+		<code>代码文本</code>	<br>
+		<br>
+		<tt>等宽文本</tt>	<br>
+		<br>
+		<span title="被动悬停提示1">被动悬停提示文本1</span>	<br>
+		<span title="被动悬停提示2">被动悬停提示文本2</span>	<br>
+		<br>
+		<abbr title="主动悬停提示1">主动悬停提示文本1</abbr>	</br>
+		<abbr title="主动悬停提示2">主动悬停提示文本2</abbr>	</br>
+		<br>
+		<p>段落1</p>
+		<p>段落2</p>
+		<br>
+		换行:</br>
+		<br>
+		<div id="point1">检查点1</div>
+		<br>
+		<span style="font-family:consolas;font-size:50px">Consolas字体的大小为50像素的文本</span>	<br>
+		<p style="text-align:left">
+			左对齐的段落
+		</p>
+		<p style="text-align:center">
+			居中对齐的段落
+		</p>
+		<p style="text-align:right">
+			右对齐的段落
+		</p>
+		<center>
+			居中对齐的文本1	<br>
+			居中对齐的文本2
+		</center>
+		<br>
+		<marquee style="font-size:100px">
+			大小为100像素的移动文本
+		</marquee>
+		<br>
+		<span style="color:red;">红色文本</span>	<br>
+		<span style="color:orange;">橙色文本</span>	<br>
+		<span style="color:yellow;">黄色文本</span>	<br>
+		<span style="color:green;">绿色文本</span>	<br>
+		<span style="color:cyan;">青色文本</span>	<br>
+		<span style="color:blue;">蓝色文本</span>	<br>
+		<span style="color:purple;">紫色文本</span>	<br>
+		<br>
+		<span style="background-color:red;color:orange">红色背景的橙色文本</span>	<br>
+		<span style="background-color:orange;color:yellow">橙色背景的黄色文本</span>	<br>
+		<span style="background-color:yellow;color:green">黄色背景的绿色文本</span>	<br>
+		<span style="background-color:green;color:cyan">青色背景的青色文本</span>	<br>
+		<span style="background-color:cyan;color:blue">蓝色背景的蓝色文本</span>	<br>
+		<span style="background-color:blue;color:purple">紫色背景的紫色文本</span>	<br>
+		<span style="background-color:purple;color:red">紫色背景的红色文本</span>	<br>
+		<br>
+		无序列表:
+		<br>
+		<ul>
+			<li>无序列表项目1</li>
+			<li>无序列表项目2</li>
+		</ul>
+		<br>
+		有序列表:
+		<br>
+		<ol>
+			<li>有序列表项目1</li>
+			<li>有序列表项目2</li>
+		</ol>
+		<br>
+		定义列表:
+		<br>
+		<dl>
+			<dt>定义列表项目1</dt>
+			<dd>定义列表项目1的定义</dd>
+			
+			<dt>定义列表项目2</dt>
+			<dd>定义列表项目2的定义</dd>
+		</dl>
+		<br>
+		<a href="#point1">跳转到检查点1</a>
+		<br>
+		可见输入框:
+		<input type="text" placeholder="可见输入框输入提示词">	<br>
+		不可见输入框:
+		<input type="password" placeholder="不可见输入框输入提示词">	<br>
+		<br>
+		<button>按钮1</button>	<br>
+		<button>按钮2</button>	<br>
+		<br>
+		<label>单选题目:</label>	<br>
+		<input type="radio" name="mark1">单选选项1	<br>
+		<input type="radio" name="mark1">单选选项2	<br>
+		<input type="radio" name="mark1">单选选项3	<br>
+		<br>
+		<button onclick="alert('提示按钮1被按下')">提示按钮1</button>	<br>
+		<button onclick="alert('提示按钮2被按下')">提示按钮2</button>	<br>
+		<br>
+		提交按钮:
+		<input type="submit">	<br>
+		<br>
+		<a href="https://www.luogu.com.cn">链接1 (洛谷) </a>	<br>
+		<a href="https://www.bilibili.com">链接2 (B站) </a>	<br>
+		<br>
+		不可见图片提示:	<br>
+		<img src="#" width="" height="" alt="图片不可见提示文本">	<br>
+		图片1:	</br>
+		<img src="https://cdn.luogu.com.cn/upload/image_hosting/h37nin65.png" width="213" height="" >	<br>
+		图片2:	</br>
+		<img src="https://cdn.luogu.com.cn/upload/image_hosting/3rpq39ov.png" width="315" height="" >	<br>
+		
+	</body>
+	
+</html>
