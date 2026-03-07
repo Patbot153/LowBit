@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">	<!--声明为utf8格式-->
@@ -142,6 +142,38 @@
 		<button>按钮1</button>	<br>
 		<button>按钮2</button>	<br>
 		<br>
+		<!-- 提交表单（默认） -->
+		<button type="submit">提交</button>	<br>
+		<!-- 重置表单 -->
+		<button type="reset">重置</button>	<br>
+		<br>
+		<input type="button" value="input按钮">	<br>
+		<br>
+		<style>
+		/* 定义按钮样式类 */
+		.button1
+		{
+		  background: #25A1F4;
+		  color: white;
+		  padding: 4px 8px;
+		  border: none;
+		  border-radius: 6px;
+		  cursor: pointer;
+		  transition: background 0.2s; /* 过渡动画，更丝滑 */
+		}
+		/* 悬浮效果 */
+		.button1:hover
+		{
+		  background: #1987D8; /* 深色一点的蓝色 */
+		}
+		/* 点击效果 */
+		.button1:active
+		{
+		  background: #0F6EB8;
+		}
+		</style>
+		<button class="button1">高级按钮</button> <br>
+		<br>
 		<label>单选题目:</label>	<br>
 		<input type="radio" name="mark1">单选选项1	<br>
 		<input type="radio" name="mark1">单选选项2	<br>
@@ -150,11 +182,9 @@
 		<button onclick="alert('提示按钮1被按下')">提示按钮1</button>	<br>
 		<button onclick="alert('提示按钮2被按下')">提示按钮2</button>	<br>
 		<br>
-		提交按钮:
-		<input type="submit">	<br>
 		<br>
-		<a href="https://www.luogu.com.cn">链接1 (洛谷) </a>	<br>
-		<a href="https://www.bilibili.com">链接2 (B站) </a>	<br>
+		<a href="https://www.luogu.com.cn" target="_blank">链接1 (洛谷) </a>	<br>
+		<a href="https://www.bilibili.com" target="_blank">链接2 (B站) </a>	<br>
 		<br>
 		不可见图片提示:	<br>
 		<img src="#" width="" height="" alt="图片不可见提示文本">	<br>

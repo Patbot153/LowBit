@@ -118,19 +118,98 @@
             }
         }
     </style>
+	
+	<style>
+		/* 定义按钮样式类 */
+		.button1
+		{
+		  background: #25A1F4;
+		  color: white;
+		  padding: 4px 8px;
+		  border: none;
+		  border-radius: 6px;
+		  cursor: pointer;
+		  transition: background 0.2s; /* 过渡动画，更丝滑 */
+		}
+		/* 悬浮效果 */
+		.button1:hover
+		{
+		  background: #1987D8; /* 深色一点的蓝色 */
+		}
+		/* 点击效果 */
+		.button1:active
+		{
+		  background: #0F6EB8;
+		}
+	</style>
+	
+	<style>
+		/* 重置链接默认样式 */
+		a {
+		  color: #25A1F4; /* 主色调（可替换成自己的品牌色） */
+		  text-decoration: none; /* 去掉默认下划线 */
+		  font-weight: 500; /* 轻微加粗，提升辨识度 */
+		  position: relative; /* 为hover下划线做准备 */
+		}
+
+		/* hover 下划线动画效果 */
+		a::after {
+		  content: '';
+		  position: absolute;
+		  bottom: -2px;
+		  left: 0;
+		  width: 0;
+		  height: 1px; /* 细下划线 */
+		  background-color: #25A1F4;
+		  transition: width 0.1s ease; /* 动画过渡，更丝滑 */
+		}
+
+		a:hover::after {
+		  width: 100%; /* hover时下划线展开 */
+		}
+
+		/* 去掉点击后的高亮（可选） */
+		a:focus {
+		  outline: none;
+		}
+
+		/* 已访问链接保持同色（默认会变紫色，重置） */
+		a:visited {
+		  color: #25A1F4;
+		}
+	</style>
 </head>
 
-<body>
+<body oncontextmenu="return false;"> <!--禁用右键-->
+
     <!-- 页面头部：通常放logo、标题等 -->
     <header>
         <h1>LowBit</h1>
         <p>By Patchouli</p>
     </header>
 
-    <!-- 导航栏：页面导航链接 -->
-    <nav>
-        <ul>
-		<!--
+	<script>
+		// 禁用F12（开发者工具）、Ctrl+U（查看源代码）、Ctrl+Shift+I等快捷键
+		document.addEventListener('keydown', function(e)
+		{
+			// F12键
+			if (e.key === 'F12')
+			{
+				e.preventDefault();
+			}
+			// Ctrl+U / Ctrl+Shift+I / Ctrl+Shift+J
+			if ((e.ctrlKey && e.key === 'u') || 
+				(e.ctrlKey && e.shiftKey && (e.key === 'i' || e.key === 'j')))
+			{
+				e.preventDefault();
+			}
+		});
+	</script>
+		<!-- 导航栏：页面导航链接 -->
+		<nav>
+			<ul>
+			<!--
+		
             <li><a href="#home">首页</a></li>
             <li><a href="#about">关于我们</a></li>
             <li><a href="#service">服务</a></li>
@@ -167,10 +246,6 @@
 			<br>
 			注：聊天记录的所有消息时间都是一致的，<br>
 			并且与你和bot发送指令的时间相同<br>
-			<br>
-			📘 可用指令列表<br>
-			/qiandao - 签到获取5积分<br>
-			/check - 查看当前积分<br>
         </main>
 
         <!-- 侧边栏：放辅助信息，如推荐内容、联系方式、广告等 -->
@@ -178,16 +253,14 @@
             <h3>目录</h3>
 			<a href="https://patbot153.github.io/LowBit/main.html">主页</a>
 			<br>
-            <a href="https://patbot153.github.io/LowBit/branch1.html">聊天记录生成</a> <-
+			<a href="https://patbot153.github.io/LowBit/main.html">框架</a>
 			<br>
-            辅助链接2
-			<br>
-            辅助链接3
+            <a href="https://patbot153.github.io/LowBit/branch1.html">聊天记录生成</a>
 			<br>
 			
 			<br>
 			<h3>联系方式</h3>
-			<button onclick="alert('1499115686')">QQ号　</button>
+			<button class="button1" onclick="alert('1499115686')">点击显示QQ</button>
 			<br>
 			
         </aside>
@@ -195,17 +268,15 @@
 
     <!-- 页脚：放版权信息、备案号、联系方式等 -->
     <footer>
-        <p><!--&copy; -->2026 LowBit Patchouli<!-- - 保留所有权利 --></p>
+        <p><!--&copy; -->2026 LowBit<!-- - 保留所有权利 --></p>
 <!--        <p>备案号：粤ICP备XXXXXXX号</p> -->
     </footer>
 
     <!-- 可选：引入外部JavaScript文件（也可以写内部JS） -->
     <script>
         // 这里可以添加JavaScript代码，如交互逻辑、数据请求等
-        console.log("网页框架加载完成！");
+        console.log("网页加载完成！");
     </script>
 </body>
 
 </html>
-
-
